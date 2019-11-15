@@ -5,14 +5,13 @@ import Practice from "./Components/PracticeAreas";
 import NoMatch from "./Components/NoMatch";
 import Contact from "./Components/Contact.js";
 import Resources from "./Components/Resources.js";
-import { Container, } from "semantic-ui-react"
+// import { Container, } from "semantic-ui-react"
 // import Navbar from "./Components/NavBar.js";
 import './App.css';
 
 const App = () => (
  <>
-  {/* <Navbar/> */}
-   
+  
     <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/practice' component={Practice} />
@@ -20,7 +19,7 @@ const App = () => (
      <Route exact path='/resources' component={Resources} />
      <Route component={NoMatch} />
    </Switch>
-  
+ 
  </>
 )
 
