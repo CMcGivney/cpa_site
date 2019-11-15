@@ -1,22 +1,133 @@
-.App {
-  text-align: center;
+body {
+  background-image: url(./Images/clayton-cardinalli-Mr1aBfy5qdw-unsplash.jpg);
+  background-repeat: repeat; 
+  height: 100%;
+  background-size: cover;
+  background-color: lightslategray;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.mainBox{
+  margin: 5em 30em 5em 5em; 
+  border: 2px solid black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.205);
+  display: grid;
+  /* width: 50em;
+  height: 40em; */
+  grid-gap: 0;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 4fr 4fr 4fr;
+  grid-template-areas:
+   "nav cont cont"
+   "nav cont cont"
+   "nav cont cont";
 }
 
-.App-logo {
-  height: 40vmin;
+.navBox {
+  background-color: beige;
+  display: grid;
+  grid-area: nav;
+  border-right: 5px solid tan;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "." 
+  "btnBox"
+  "btnBox"
+  "." 
+}
+/* contents box style */
+.contentBox {
+  grid-area: cont;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 15px ;
+  grid-template-areas:
+  
+  "showBox"
+  "footer"
+  ;
+  background-color: lightslategray;
+  justify-self: center;
+  align-self: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.showBox {
+  grid-area: showBox;
+  background-color: whitesmoke;
+  margin: 25px 25px 18px 25px;
+  border: 2px solid black;
+  padding: 10px 30px 10px 30px;
+  text-align: left;
+}
+.mainHeader{
+  margin: 0 0 20px 0;
+
+}
+.title {
+  margin: 0 0 0 0;
+  font-size: 2em;
+  font-weight: 100em;
+  font-style: italic;
+  text-decoration-style: black;
+  text-decoration-line: underline;
+}
+.certified {
+  font-style: italic;
+  font-weight: 200em;
+}
+.footer{
+  grid-area: footer;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  font-size: 12px;
+}
+a.phoneNum {
   color: white;
 }
-
-.App-link {
-  color: #09d3ac;
+a.phoneNum:hover {
+color: blue;
 }
+/*Bottun nav box */
+
+.buttonBox {
+  text-align: left;
+  display: grid;
+  grid-area: btnBox;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "btn1"
+  "btn2"
+  "btn3"
+  "btn4";
+
+}
+
+.btn1 {
+  grid-area: btn1;
+  justify-self: center;
+  align-self: center;
+  
+}
+.btn2 {
+  grid-area: btn2;
+  justify-self: center;
+  align-self: center;
+}
+.btn3 {
+  grid-area: btn3;
+  justify-self: center;
+  align-self: center;
+}
+.btn4 {
+  grid-area: btn4;
+  justify-self: center;
+  align-self: center;
+}
+
