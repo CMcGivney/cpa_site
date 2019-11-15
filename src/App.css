@@ -10,8 +10,8 @@ body {
 }
 .mainBox {
   margin: 5em 15em 0 1em; 
-  border: 2px solid black;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.205);
+  /* border: 2px solid black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.205); */
   display: grid;
   opacity: 0.95;
   grid-gap: 0;
@@ -43,7 +43,7 @@ body {
   grid-area: showBox;
   background-color: whitesmoke;
   margin: 25px 25px 18px 25px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 10px 15px 10px 15px;
 }
 .mainHeader{
@@ -159,8 +159,8 @@ color: blue;
   .mainBox {
   margin: 1rem;
   font-size: calc(12px + ((100vw - 736px)) / 680);
-  border: 2px solid black;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.205);
+  /* border: 2px solid black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.205); */
   display: grid;
   opacity: 0.95;
   grid-gap: 0;
@@ -175,7 +175,7 @@ color: blue;
   grid-area: showBox;
   background-color: whitesmoke;
   margin: 25px 25px 16px 25px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 10px 15px 10px 15px;
   text-align: left;
   font-size: calc(12px + ((100vw - 736px)) / 680);

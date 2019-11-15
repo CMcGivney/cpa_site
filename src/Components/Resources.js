@@ -21,8 +21,7 @@ const Resources = () => (
          <p><a href="https://www.edd.ca.gov">California Employment Development Department</a></p>
          <p><a href="https://www.edd.ca.gov/pdf_pub_ctr/de44.pdf">California Employers' Guide (DE44)</a></p>
        </div>
-    
-       </div>
+      </div>
      <div className="footer">© Schiellack & Associates | All Rights Reserved | <a className="phoneNum" href="tel:+1-805-278-1888">805-278-1888</a></div>
   </div>
  </div>
