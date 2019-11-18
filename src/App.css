@@ -10,8 +10,10 @@ body {
 }
 /*Container for all of the page components*/
 .mainBox {
-  margin: 5em 15em 0 1em; 
-  width:65%;
+  margin: 0 10em 0 10em; 
+  /* max-height: 1000px; */
+  min-height: 600px;
+  max-width: 600px;
   display: grid;
   opacity: 0.95;
   grid-gap: 0;
@@ -44,16 +46,24 @@ body {
   margin: 25px 25px 18px 25px;
   padding: 10px 15px 10px 15px;
   font-family: 'MerriweatherSans';
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 3fr ;
+  grid-template-areas: "mHead" "mCont"
 }
 
 /*Home page content(most content of all pages)*/
 .homeContent {
+  margin: .5em;
   text-indent: 20px;
   font-size: calc(14px + ((100vw - 1100px)) / 680);
   text-align: justify;
 }
 /*All content besides home page*/
 .mainContent {
+  margin: 1em;
+  grid-area: mCont;
   font-size: calc(14px + ((100vw - 768px)) / 680);
   text-align: center;
   /* margin: 0 9em 0 12em; */
@@ -62,11 +72,11 @@ body {
 .col-bullets {
   display: grid;
   grid-gap: 0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
-  grid-template-areas: "col-1 col-2";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "col-1" "col-2";
   text-align: left;
-  justify-items: center;
+  
 }
 
 .col-1 {
@@ -78,14 +88,18 @@ body {
 
 /*Changing the default bullet indent from 40px to 25px*/
 ul {
+  margin: 0;
   padding: 0 0 0 25px;
+}
+li {
+  padding: 10px;
 }
 hr {
   margin: 0px 0px 7px 0px;
 }
 /*Logo Title Header container & children*/
 .mainHeader{
-  margin: 0 0 20px 0;
+  grid-area: mHead;
   text-align: center;
 }
 .title {
@@ -136,11 +150,13 @@ color: blue;
 }
 /*Button container */
 .buttonBox {
+  width: 100%;
   color: black;
-  text-align: left;
   display: grid; 
   grid-area: btnBox;
   grid-gap: 0;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -152,14 +168,20 @@ color: blue;
 }
 .button {
   color: black;
+  padding: .5em 0 0 0 ;
+  width: 100%;
+  height: 100%;
+  align-items: center;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'Lato';
   font-size: calc(12px + ((100vw - 1440px)) / 680);
   cursor: pointer;
-  justify-items: center;
-  align-items: center;
+}
+.button:hover {
+  background-color: #555;
+  color: white;
 }
 
 .btn1 {
@@ -187,13 +209,12 @@ color: blue;
 /* mobile screen sizes below 768 width*/
 @media only screen and (max-width: 767px) {
   .mainBox {
-  margin: 1em;
-  width: 92%;
+  margin: 0 1em 0 1em;
   display: grid;
   opacity: 0.95;
   grid-gap: 0;
   grid-template-columns: 2fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 2.5em auto;
   grid-template-areas:
    "nav"
    "cont"
@@ -203,7 +224,6 @@ color: blue;
   grid-area: showBox;
   background-color: whitesmoke;
   margin: 25px 25px 16px 25px;
-  /* border: 2px solid black; */
   padding: 10px 15px 10px 15px;
   text-align: justify;
  
@@ -252,10 +272,8 @@ color: blue;
   display: grid;
   grid-gap: 0;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr ;
   grid-template-areas: "col-1" "col-2";
   text-align: left;
-  justify-items: start;
 }
  ul {
    margin: 0;
