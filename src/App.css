@@ -11,7 +11,7 @@ body {
 /*Container for all of the page components*/
 .mainBox {
   margin: 5em 15em 0 1em; 
-  width:60%;
+  width:65%;
   display: grid;
   opacity: 0.95;
   grid-gap: 0;
@@ -50,7 +50,7 @@ body {
 .homeContent {
   text-indent: 20px;
   font-size: calc(14px + ((100vw - 1100px)) / 680);
-  text-align: left;
+  text-align: justify;
 }
 /*All content besides home page*/
 .mainContent {
@@ -185,10 +185,10 @@ color: blue;
 }
 
 /* mobile screen sizes below 768 width*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .mainBox {
   margin: 1em;
-  width: 93%;
+  width: 92%;
   display: grid;
   opacity: 0.95;
   grid-gap: 0;
@@ -205,7 +205,7 @@ color: blue;
   margin: 25px 25px 16px 25px;
   /* border: 2px solid black; */
   padding: 10px 15px 10px 15px;
-  text-align: left;
+  text-align: justify;
  
 }
 .navBox {
@@ -237,6 +237,12 @@ color: blue;
   font-weight: 100em;
   font-size: calc(0.75rem + ((1vw - 3.2px) * 1));
 }
+/*Home page content(most content of all pages)*/
+.homeContent {
+  text-indent: 20px;
+  font-size: calc(14px + ((100vw - 1100px)) / 680);
+  text-align: justify;
+}
 .mainContent {
   font-size: calc(14px + ((100vw - 768px)) / 680);
   margin: 0
@@ -251,9 +257,12 @@ color: blue;
   text-align: left;
   justify-items: start;
 }
-
+ ul {
+   margin: 0;
+ }
 .col-1 {
   grid-area: col-1;
+ 
 }
 .col-2 {
   grid-area: col-2;
