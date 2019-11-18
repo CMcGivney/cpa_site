@@ -15,6 +15,7 @@ const Contact = () => (
          <p className="title">Schiellack & Associates</p>
          <p className="certified">Certified Public Accountants</p>
        </div>
+       <hr/>
        <div className="mainContent">
         <p>Email Address: <a href="mailto:info.sandpcpa.com">info.sandpcpa.com</a></p>
         <p>Phone: <a href="tel:+1-805-278-1888">(805) 278-1888</a></p>

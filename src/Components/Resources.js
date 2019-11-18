@@ -15,6 +15,7 @@ const Resources = () => (
          <p className="title">Schiellack & Associates</p>
          <p className="certified">Certified Public Accountants</p>
        </div>
+       <hr/>
        <div className="mainContent">
          <p><a href="https://www.irs.gov">Internal Revenue Service</a></p>
          <p><a href="https://www.ftb.ca.gov">California Franchise Tax Board</a></p>

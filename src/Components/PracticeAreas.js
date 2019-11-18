@@ -15,15 +15,22 @@ const Practice = () => (
          <p className="title">Schiellack & Associates</p>
          <p className="certified">Certified Public Accountants</p>
        </div>
-       <div className="mainContent">
+       <hr/>
+       <div className="mainContent col-bullets">
+       <div className="col-1">
          <ul>
            <li>Financial Statement Preparation</li>
            <li>Tax Planning & Preparation</li>
            <li>Small Business Consulting</li>
+         </ul>
+         </div>
+         <div className="col-2">
+           <ul>
            <li>CFO/Controller Services</li>
            <li>Government Contractors</li>
            <li>Construction Industry</li>
-         </ul>
+           </ul>
+         </div>
         </div>
      </div>
      <div className="footer">© Schiellack & Associates | All Rights Reserved | <a className="phoneNum" href="tel:+1-805-278-1888">805-278-1888</a></div>
