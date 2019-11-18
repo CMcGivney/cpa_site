@@ -230,8 +230,7 @@ color: blue;
   font-size: calc(1.5rem + ((1vw - 3.2px) * 1));
   font-weight: 100em;
   font-style: italic;
-  text-decoration-style: black;
-  text-decoration-line: underline;
+
 }
 .certified {
   font-style: italic;
