@@ -1,5 +1,5 @@
 body {
-  background-image: url(./Images/clayton-cardinalli-Mr1aBfy5qdw-unsplash.jpg);
+  background-image: url(./Images/beach.jpg);
   background-repeat: repeat; 
   height: auto;
   background-size: cover;
@@ -45,7 +45,7 @@ body {
   background-color: whitesmoke;
   margin: 25px 25px 18px 25px;
   padding: 10px 15px 10px 15px;
-  font-family: 'MerriweatherSans';
+  font-family: 'Merriweather Sans', sans-serif;
   display: grid;
   grid-gap: 0;
   grid-template-columns: 1fr;
@@ -58,7 +58,7 @@ body {
   margin: .5em;
   text-indent: 20px;
   font-size: calc(14px + ((100vw - 1100px)) / 680);
-  text-align: justify;
+  text-align: left;
 }
 /*All content besides home page*/
 .mainContent {
@@ -104,12 +104,9 @@ hr {
 }
 .title {
   margin: 0 0 0 0;
-  font-family: 'RobotoSlab';
+  font-family: 'Roboto', serif;
   font-size: calc(32px + ((100vw - 1440px)) / 680);
-  font-weight: 100em;
   font-style: italic;
-  /* text-decoration-style: black;
-  text-decoration-line: underline; */
 }
 .certified {
   font-style: italic;
@@ -168,7 +165,8 @@ color: blue;
 }
 .button {
   color: black;
-  padding: .5em 0 0 0 ;
+  /* padding: .5em 0 0 0 ; 
+  */
   width: 100%;
   height: 100%;
   align-items: center;
@@ -178,32 +176,29 @@ color: blue;
   font-family: 'Lato';
   font-size: calc(12px + ((100vw - 1440px)) / 680);
   cursor: pointer;
+  background: none;
+  position: relative;
+  transition:color 0.25s ease;
 }
+
 .button:hover {
-  background-color: #555;
   color: white;
+  background-color: rgb(165, 162, 162);
+  
 }
 
 .btn1 {
   grid-area: btn1;
-  /* justify-self: center; */
-  /* align-self: center; */
 }
 
 .btn2 {
   grid-area: btn2;
-  /* justify-self: center; */
-  /* align-self: center; */
 }
 .btn3 {
   grid-area: btn3;
-  /* justify-self: center; */
-  /* align-self: center; */
 }
 .btn4 {
   grid-area: btn4;
-  /* justify-self: center; */
-  /* align-self: center; */
 }
 
 /* mobile screen sizes below 768 width*/
@@ -225,7 +220,7 @@ color: blue;
   background-color: whitesmoke;
   margin: 25px 25px 16px 25px;
   padding: 10px 15px 10px 15px;
-  text-align: justify;
+  text-align: left;
  
 }
 .navBox {
@@ -259,9 +254,9 @@ color: blue;
 }
 /*Home page content(most content of all pages)*/
 .homeContent {
-  text-indent: 20px;
+  text-indent: 24px;
   font-size: calc(14px + ((100vw - 1100px)) / 680);
-  text-align: justify;
+  text-align: left;
 }
 .mainContent {
   font-size: calc(14px + ((100vw - 768px)) / 680);

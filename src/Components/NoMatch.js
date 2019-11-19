@@ -3,9 +3,9 @@ import { Link, } from 'react-router-dom';
 
 
 const NoMatch = () => (
-  <h3 textAlign="center">
+  <h3 className="button">
     Page not found return
-    <Link to="/"> Home</Link>
+    <Link className="button" to="/"> Home</Link>
   </h3>
 )
 

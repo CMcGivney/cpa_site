@@ -17,9 +17,9 @@ const Contact = () => (
         <hr/>
        </div>
        <div className="mainContent">
-        <p>Email Address: <a href="mailto:info.sandpcpa.com">info.sandpcpa.com</a></p>
+        <p>Email Address: <a href="mailto:info@sandpcpa.com?subject=New Client Inquiry" target="_blank" rel="noopener noreferrer">info@sandpcpa.com</a></p>
         <p>Phone: <a href="tel:+1-805-278-1888">(805) 278-1888</a></p>
-        <p>Fax: <a href="fax:+1-805-278-9888">(805) 278-9998</a></p>
+        <p>Fax: (805) 278-9998</p>
         <p>Mailing Address:<br/> 300 E. Esplanade Drive, Suite 1740 Oxnard, CA 93036</p>
        </div>
      </div>

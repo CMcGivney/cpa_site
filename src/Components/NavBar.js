@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 class Navbar extends React.Component {
   render() {
@@ -9,14 +9,14 @@ class Navbar extends React.Component {
         <div className="btn1 button">
          <NavLink 
          exact
-         className="button" 
+         className="btn1 button" 
          to='/' 
          activeStyle={styles.active}>Our Firm</NavLink>
         </div>
         <div className="btn2 button">
           <NavLink 
           exact
-          className="button" 
+          className="btn2 button" 
           to='/practice' 
           activeStyle={styles.active}>Practice Areas</NavLink>
         </div>
