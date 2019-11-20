@@ -152,8 +152,9 @@ color: blue;
   display: grid; 
   grid-area: btnBox;
   grid-gap: 0;
-  justify-items: center;
-  align-items: center;
+  text-align: center;
+  /* justify-items: center;
+  align-items: center; */
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -187,18 +188,24 @@ color: blue;
   
 }
 
-.btn1 {
+.btn1{
   grid-area: btn1;
+  color: black;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn2 {
   grid-area: btn2;
+  color: black;
 }
 .btn3 {
   grid-area: btn3;
+  color: black;
 }
 .btn4 {
   grid-area: btn4;
+  color: black;
 }
 
 /* mobile screen sizes below 768 width*/

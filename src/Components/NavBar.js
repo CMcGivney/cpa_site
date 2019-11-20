@@ -9,21 +9,21 @@ class Navbar extends React.Component {
         <div className="btn1 button">
          <NavLink 
          exact
-         className="btn1 button" 
+         className="btn1" 
          to='/' 
          activeStyle={styles.active}>Our Firm</NavLink>
         </div>
         <div className="btn2 button">
           <NavLink 
           exact
-          className="btn2 button" 
+          className="btn2" 
           to='/practice' 
           activeStyle={styles.active}>Practice Areas</NavLink>
         </div>
         <div className="btn3 button">
           <NavLink 
           exact
-          className="btn3 button" 
+          className="btn3" 
           to='/contact'
           activeStyle={styles.active}
           >Contact Info</NavLink>
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
         <div className="btn4 button">
          <NavLink 
           exact
-          className="btn4 button"
+          className="btn4"
           to='/resources'
           activeStyle={styles.active}
           >Resources</NavLink>
