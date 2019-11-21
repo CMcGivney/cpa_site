@@ -12,7 +12,7 @@ body {
 .mainBox {
   margin: 0 10em 0 10em; 
   /* max-height: 1000px; */
-  min-height: 600px;
+  min-height: 670px;
   max-width: 600px;
   display: grid;
   opacity: 0.95;
@@ -152,8 +152,8 @@ color: blue;
   display: grid; 
   grid-area: btnBox;
   grid-gap: 0;
-  text-align: center;
-  /* justify-items: center;
+  /* text-align: center;
+  justify-items: center;
   align-items: center; */
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -165,21 +165,11 @@ color: blue;
 
 }
 .button {
-  color: black;
-  /* padding: .5em 0 0 0 ; 
-  */
-  width: 100%;
-  height: 100%;
   align-items: center;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-family: 'Lato';
   font-size: calc(12px + ((100vw - 1440px)) / 680);
   cursor: pointer;
-  background: none;
-  position: relative;
-  transition:color 0.25s ease;
 }
 
 .button:hover {
@@ -187,24 +177,38 @@ color: blue;
   background-color: rgb(165, 162, 162);
   
 }
-
-.btn1{
-  grid-area: btn1;
-  color: black;
+.txtBtn {
+  margin-top: .5em;
   display: inline-block;
-  text-align: center;
+}
+
+.btn1 {
+  grid-area: btn1;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  color: black;
 }
 
 .btn2 {
   grid-area: btn2;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
   color: black;
 }
 .btn3 {
   grid-area: btn3;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
   color: black;
 }
 .btn4 {
   grid-area: btn4;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
   color: black;
 }
 

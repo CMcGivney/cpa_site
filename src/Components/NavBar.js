@@ -6,35 +6,35 @@ class Navbar extends React.Component {
     return (
       <>
        <div className="buttonBox">
-        <div className="btn1 button">
+        <div className="button btn1 ">
          <NavLink 
          exact
-         className="btn1" 
+         className="btn1 button" 
          to='/' 
-         activeStyle={styles.active}>Our Firm</NavLink>
+         activeStyle={styles.active}><div className="txtBtn">Our Firm</div></NavLink>
         </div>
         <div className="btn2 button">
           <NavLink 
           exact
-          className="btn2" 
+          className="btn2 button" 
           to='/practice' 
-          activeStyle={styles.active}>Practice Areas</NavLink>
+          activeStyle={styles.active}><div className="txtBtn">Practice Areas</div></NavLink>
         </div>
         <div className="btn3 button">
           <NavLink 
           exact
-          className="btn3" 
+          className="btn3 button" 
           to='/contact'
           activeStyle={styles.active}
-          >Contact Info</NavLink>
+          ><div className="txtBtn">Contact Info</div></NavLink>
         </div>
         <div className="btn4 button">
          <NavLink 
           exact
-          className="btn4"
+          className="btn4 button"
           to='/resources'
           activeStyle={styles.active}
-          >Resources</NavLink>
+          ><div className="txtBtn">Resources</div></NavLink>
        </div>
       </div>
     </>
