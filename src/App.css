@@ -11,8 +11,7 @@ body {
 /*Container for all of the page components*/
 .mainBox {
   margin: 0 10em 0 10em; 
-  /* max-height: 1000px; */
-  min-height: 670px;
+  min-height: 680px;
   max-width: 600px;
   display: grid;
   opacity: 0.95;
