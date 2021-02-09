@@ -1,3 +1,5 @@
+These clients wanted to update their website from a Flash based site before google discontinued FLashPlayer support. This was a simple project, with that said I should have made it with pure HTML, CSS and JS instead of using react, this would have kept the build package smaller for this small website. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
